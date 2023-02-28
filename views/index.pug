@@ -1,7 +1,24 @@
+doctype html
 html
   head 
-    link(href="../css/index.css?name=KOkal" rel="stylesheet")
+    link(href="../css/index.css" rel="stylesheet")
   body 
-    h1 hello world
+    div.wrapper
+      h1 Ticket Place
+      div.table 
+        div.row
+          a All events 
+          a Concerts
+          a Festivals
+          a Other events
+        div.row
+          input.search(type="text", placeholder="Search by event,name or activity")
+          input.search(type="date")
+          button.search SEARCH
+    h2 popular events 
+    h2 Upcomming events 
+    h2 comming soon
+       
+
 
     script(src="../js/index.js")

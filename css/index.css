@@ -1,3 +1,52 @@
 body {
-    background-color: aqua;
+    margin: 0;
+    
+    font-size: 22px;
+    font-family: Verdana;
+    text-transform: uppercase;
+
+}
+div.wrapper{
+    background-image: url(../images/nice-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 230px;
+}
+h1{
+    margin: 0;
+}
+
+
+div.table{
+    margin: 15px;
+}
+
+div.row{
+    margin: 15px 0;
+}
+
+a{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.search{
+    border-radius: 20px;
+    width: 355px;
+    height: 30px;
+    padding: 15px;
+    margin: 0 1px;
+    box-sizing: border-box;
+}
+input[type="date"]{
+    width: 200px;
+}
+button.search{
+    width: 100px;
+    height: 34px;
+    border-radius: 20px;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to left bottom, #60d0eb, #7cc4ed, #6596dd, #7e77e7, #aa8cb1);
 }
