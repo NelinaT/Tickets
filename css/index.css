@@ -14,9 +14,16 @@ div.wrapper{
 }
 h1{
     margin: 0;
+    text-align: center;
+    color: #0a547eeb;
+    font-family: math;
 }
 
-
+img{
+    height: 100px;
+    position: relative;
+    top: 10px;
+}
 div.table{
     margin: 15px;
 }
