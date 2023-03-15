@@ -4,12 +4,20 @@ html
     link(href="../css/index.css" rel="stylesheet")
   body 
     div.wrapper
-      img(src="../images/logo.png", alt="")
-      //- h1 Ticket Place
+      div.sign
+        a.profile sign in
+        a.profile sign up 
+        select#lang(name="lang")
+          option(value="EN") EN
+          option(value="BG") BG
+      a(id="logo", href="/")
+        img(src="../images/logo.png", alt="")
+       
       div.table 
         div.row
           a All events 
           a Concerts
+        div.row
           a Festivals
           a Other events
         div.row
@@ -22,4 +30,5 @@ html
        
 
 
+    script(src="../node_modules/jquery/dist/jquery.min.js")
     script(src="../js/index.js")

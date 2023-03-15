@@ -11,13 +11,27 @@ div.wrapper{
     background-size: cover;
     background-repeat: no-repeat;
     height: 230px;
+    position: relative;
 }
-h1{
+.sign{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.profile{
+    font-size: 15px;
+    text-transform: lowercase;
+    color: #ffffff;
+}
+.profile:hover{
+    color: #1310b9;
+}
+/* h1{
     margin: 0;
     text-align: center;
     color: #0a547eeb;
     font-family: math;
-}
+} */
 
 img{
     height: 100px;
@@ -25,7 +39,12 @@ img{
     top: 10px;
 }
 div.table{
+    text-align: center;
     margin: 15px;
+    width: 800px;
+    position: relative;
+    left: calc(50% - 400px);
+    bottom: 70px;
 }
 
 div.row{
