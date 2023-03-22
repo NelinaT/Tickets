@@ -75,6 +75,16 @@ app.get('/node_modules/jquery*.js', function(req, res) {
         res.sendStatus(500);
     }
 });
+app.get('/node_modules/moment*.js', function(req, res) {
+    var fileName = '.' + req.originalUrl.substring(0, (req.originalUrl.includes("?") ? req.originalUrl.indexOf("?") : undefined));
+    // Double check that we're working in the project folder
+    if (fileName.startsWith(".")) {
+        res.sendFile(path.resolve(fileName));
+    }
+    else {
+        res.sendStatus(500);
+    }
+});
 
 app.use('/events', events);
 

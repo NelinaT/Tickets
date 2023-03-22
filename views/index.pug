@@ -6,14 +6,17 @@ html
     div.wrapper
       div.sign
         a.profile sign in
-        a.profile sign up 
-        select#lang(name="lang")
-          option(value="EN") EN
-          option(value="BG") BG
+        a.profile sign up
+        div.dropDown 
+          span EN
+          ul
+            li.lang.selected EN
+            li.lang BG
+        
       a(id="logo", href="/")
         img(src="../images/logo.png", alt="")
        
-      div.table 
+      div.eventTypeSelectorsWrapper 
         div.row
           a All events 
           a Concerts
@@ -25,10 +28,24 @@ html
           input.search(type="date")
           button.search SEARCH
     h2 popular events 
+    table.popularEvents
+      thead 
+        tr 
+          th Artist 
+          th Event type 
+          th Date 
+          th Start time
+          th End time
+          th Place 
+          th City
+      tbody.popularEventsBody 
+        
     h2 Upcomming events 
-    h2 comming soon
+    h2 Comming soon
        
 
 
     script(src="../node_modules/jquery/dist/jquery.min.js")
+    script(src="../node_modules/moment/min/moment.min.js")
+
     script(src="../js/index.js")

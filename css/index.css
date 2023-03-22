@@ -3,7 +3,6 @@ body {
     
     font-size: 22px;
     font-family: Verdana;
-    text-transform: uppercase;
 
 }
 div.wrapper{
@@ -38,7 +37,7 @@ img{
     position: relative;
     top: 10px;
 }
-div.table{
+div.eventTypeSelectorsWrapper {
     text-align: center;
     margin: 15px;
     width: 800px;
@@ -76,3 +75,87 @@ button.search{
     cursor: pointer;
     background-image: linear-gradient(to left bottom, #60d0eb, #7cc4ed, #6596dd, #7e77e7, #aa8cb1);
 }
+
+.dropDown
+{
+    display: inline-block;
+    font-size: 15px;
+    /* padding: 0px; */
+    padding-inline-start: 10px;
+    margin-right: 5px;
+    min-width: 24px;
+}
+
+.dropDown span {
+}
+
+.dropDown ul{
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    margin-block-end:0;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+    background-color: #6596dd;
+} 
+
+
+.dropDown:hover ul{
+    display: block;
+}
+
+.dropDown ul li {
+    cursor: pointer;
+}
+.dropDown ul .selected{
+    background-color: #aa8cb1;
+}
+.lang{
+    display:block;
+    
+}
+
+.hide{
+    display: none;
+}
+
+/* tables */
+table{
+    background-color: #d7efff;
+    border-collapse: collapse;
+}
+thead tr{
+    background: #000000;
+    color: #fffdfd;
+    font-size: 18px;
+}
+
+th{
+    min-width: 150px;
+}
+
+
+thead td {
+   
+}
+
+tr{
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+tr:last-child{
+    border: none;
+}
+
+tr:nth-child(2n){
+    background-color: #addcfdb8;;
+}
+
+td{
+
+}
+
+
+/* tables */
